@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="users" namespace="/" extends="struts-default">
+		<action name="users_*" class="com.action.UsersAction" method="{1}">
+			<result name="main" type="redirect">/pages/main.jsp</result>
+			<!-- 添加信息 -->
+			<result name="insertSale" type="redirect">/pages/main.jsp</result>
+			<!-- <result name="addMsg" type="chain">users_main</result> -->
+			<!-- 查询销售记录 -->
+			<result name="querySale">/pages/showSale.jsp</result>
+			<!-- 查询商品库存 -->
+			<result name="queryProduct">/pages/productShow.jsp</result>
+			<result name="loginErr">/login.jsp</result>
+			<result name="loginOff">/login.jsp</result>
+		</action>
+	</package>
+</struts>    

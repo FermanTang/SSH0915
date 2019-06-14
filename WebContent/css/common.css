@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.bglogin {
+	background-image: url(../images/bg-01.jpg);
+}
+
+.logo {
+	padding: 30px 0 0 50px;
+	color: white;
+}
+
+.logo h1 {
+	font-family: 楷体;
+}
+
+.logo h6 {
+	padding: 0 0 0 100px;
+}
+
+/*中文*/
+#login1 {
+	color: #0564C2;
+	width: 22%;
+	text-align: center;
+	margin: 150px auto;
+	height: 400px;
+	background: #639CC9;
+	opacity: 0.8;
+	/* border-top-left-radius */
+	border-radius: 10px;
+	width: 420px;
+	position: relative;
+}
+
+#login1 table {
+	font-size: 24px;
+	padding: 50px 0 0 20px;
+}
+
+#login1 tr input {
+	font-size: 24px;
+	width: 250px;
+	border-radius: 10px;
+	padding: 0 5px 0 5px;
+	background: white;
+	margin: 20px 0px;
+}
+
+#login1 select {
+	color: #0564C2;
+	font-size: 24px;
+	width: 265px;
+	padding: 0 50px;
+	text-align: center;
+	margin: 20px 0;
+	border-radius: 10px;
+}
+
+#login1 tr:nth-child(4) input {
+	margin-top: 40px;
+	color: #0564C2;
+	font-size: 30px;
+	text-align: center;
+	width: 265px;
+}
+
+#login1 tr:nth-child(4) input:hover {
+	cursor: pointer;
+	background: #0564C2;
+	color: white;
+}
+
+#login1 .language1, #login1 .down1 {
+	border: 1px solid white;
+	width: 260px;
+	font-size: 16px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#login1 .language1 {
+	position: absolute;
+	left: 102px;
+	bottom: 165px;
+}
+
+#login1 .down1 {
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	text-align: center;
+}
+/* transform: rotate(180deg); */
+/*  border:20px solid;    更改border的宽度即可改变三角的大小
+    border-radius: 10px;
+    border-color: white transparent transparent transparent;  
+                更改color可以改变三角的方向 */
+
+/* width:29px;
+height:24px;
+border:0px;边框设置为0
+background-color:Transparent;背景颜色设为透明
+background-image:url(../images/zxcs_go.png);换成自己的背景  
+border:1px solid red; 
+appearance: none;去除下拉框的默认三角形*/
+/* ----------------------------- */
+/*英文*/
+#login2 {
+	color: #0564C2;
+	width: 22%;
+	text-align: center;
+	margin: 150px auto;
+	height: 400px;
+	background: #639CC9;
+	opacity: 0.8;
+	/* border-top-left-radius */
+	border-radius: 10px;
+	width: 420px;
+	position: relative;
+}
+
+#login2 table {
+	font-size: 24px;
+	padding: 50px 0 0 20px;
+}
+
+#login2 tr input {
+	font-size: 24px;
+	width: 240px;
+	border-radius: 10px;
+	padding: 0 5px 0 5px;
+	background: white;
+	margin: 20px 0px;
+}
+
+#login2 tr:nth-child(4) input {
+	margin-top: 40px;
+	color: #0564C2;
+	font-size: 30px;
+	text-align: center;
+	width: 250px;
+}
+
+#login2 tr:nth-child(4) input:hover {
+	cursor: pointer;
+	background: #0564C2;
+	color: white;
+}
+
+#login2 .language2, #login2 .down2 {
+	border: 1px solid white;
+	width: 250px;
+	font-size: 16px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#login2 .language2 {
+	position: absolute;
+	right: 23px;
+	bottom: 165px;
+}
+
+#login2 .down2 {
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	text-align: center;
+}
+/*-------------------------*/
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.main {
+	background-image: url(../images/bg-01.jpg);
+	padding: 10px;
+}
+
+#main1 {
+	width: 100%;
+	border: 10px solid #137EC6;
+	border-radius: 5px;
+}
+
+#self {
+	width: 100%;
+	padding: 10px;
+	position: relative;
+	color: white;
+}
+
+.cardNoShow li {
+	margin: 5px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.cardNoShow, .cardNoShow a {
+	font-size: 20px;
+	color: white;
+}
+
+.cardNoShow a:hover {
+	text-decoration:underline;
+}
+
+#self .cardNoShow {
+	background: linear-gradient(to bottom, #0031A2, #0077EC);
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	border-radius: 3px;
+	padding: 5px 10px;
+}
+
+.selfLeft ul {
+	width: 180px;
+	list-style: none;
+}
+
+.selfLeft ul li {
+	padding: 10px 0 30px 10px;
+	font-size: 25px;
+}
+
+.selfLeft ul li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+#left {
+	padding: 5px;
+	background: white;
+	width: 230px;
+}
+
+#menu {
+	opacity: 0.9;
+	background: #3D9ED5;
+	border-radius: 5px;
+    position: relative;	
+}
+
+.firstMenu {
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.RTriangle1 {
+	border:10px solid;    /* 更改border的宽度即可改变三角的大小 */
+    border-color: transparent transparent transparent white;
+    right: 0px;
+    position: absolute;
+    right: 0px;
+    top: 12px;
+}
+
+.firstMenu span {
+	display:block;
+	padding: 5px 0 5px 10px;
+	border-bottom: 1px solid;
+}
+
+.first {
+	background: #8BAEED;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+/* display:inline;转换为行内元素
+display:block;转换为块状元素
+display:inline-block;转换为行内块状元素 */
+
+.firstMenu li {
+	font-size: 20px;
+	padding: 10px 0 0 20px;
+	cursor: pointer;
+}
+
+.firstMenu li li{
+	font-size: 16px;
+}
+
+#right {
+	width: 710px;
+	height: 300px;
+	border: 5px solid #e1cac8;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	text-align: center;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.bean">
+	 <class name="Users" table="t_users">
+	 	<id name="uId" column="u_id">
+	 		 <generator class="native"></generator>
+	 	</id>
+	 	<property name="userName" column="u_userName"></property>
+	 	<property name="password" column="u_password"></property>
+	 	<property name="realName" column="u_realName"></property>
+	 	<set name="saleUserId" table="t_sale" lazy="false" order-by="s_totalPrice desc">
+	 		<key column="s_userId"></key>
+	 		<one-to-many class="Sale"></one-to-many>
+	 	</set>
+	</class>
+</hibernate-mapping>
+
+
+
+
+
+
+
+
+
+

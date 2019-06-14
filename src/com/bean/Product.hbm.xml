@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.bean">
+	 <class name="Product" table="t_product">
+	 	<id name="pId" column="p_id"></id>
+	 	<property name="productName" column="p_productName"></property>
+	 	<property name="quantity" column="p_quantity"></property>
+	 	<!-- <set name="realEstate" lazy="false" order-by="r_buildTime desc">
+	 		<key column="r_cardId"></key>
+	 		<one-to-many class="RealEstate"></one-to-many>
+	 	</set> -->
+	 	<set name="saleProductId" table="t_sale" lazy="false" order-by="s_totalPrice desc">
+	 		<key column="s_productId"></key>
+	 		<one-to-many class="Sale"></one-to-many>
+	 	</set>
+	</class>
+</hibernate-mapping>
+
+
+
+
+
+
+
+
+
+

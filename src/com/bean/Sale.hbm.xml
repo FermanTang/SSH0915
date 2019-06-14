@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.bean">
+	 <class name="Sale" table="t_sale">
+	 	<id name="sId" column="s_id">
+	 		 <generator class="native"></generator>
+	 	</id>
+	 	<property name="price" column="s_price"></property>
+	 	<property name="quantity" column="s_quantity"></property>
+	 	<property name="totalPrice" column="s_totalPrice"></property>
+	 	<property name="saleDate" column="s_saleDate"></property>
+	 	<property name="userId" column="s_userId"></property>
+	 	<property name="productId" column="s_productId"></property>
+	 	<!-- <set name="realEstate" lazy="false" order-by="r_buildTime desc">
+	 		<key column="r_cardId"></key>
+	 		<one-to-many class="RealEstate"></one-to-many>
+	 	</set> -->
+	 	<many-to-one name="user" class="Users" column="s_userId"
+	 	insert="false" update="false" lazy="false"></many-to-one>
+	 	<many-to-one name="product" class="Product" column="s_productId"
+	 	insert="false" update="false" lazy="false"></many-to-one>
+	</class>
+</hibernate-mapping>
+
+
+
+
+
+
+
+
+
+
